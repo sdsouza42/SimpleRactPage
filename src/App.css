@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  font-family: Arial,
+    Helvetica,
+    sans-serif;
+
+}
+
+.album-list {
+  flex: 1;
+}
+
+.track-list {
+  flex: 1;
+}
+
+.baseContainer {
+  color: white;
+  display: flex;
+  width: 100vw;
+  /* full viewport width */
+  height: 100vh;
+  /* just for visibility */
+}
+
+.baseContainer img {
+  border-radius: 12px;
+  /* curved corners */
+  border: 2px solid #ccc;
+  /* optional: light border */
+  max-width: 100%;
+  /* responsive scaling */
+  height: auto;
+}
+
+.albumList {
+  list-style: none;
+  /* removes bullet points */
+  display: flex;
+  /* lays out items horizontally */
+  padding: 0;
+  /* removes default padding */
+  margin: 0;
+  /* optional: removes default margin */
+  gap: 1rem;
+  /* optional: adds spacing between items */
+}
+
+.albumList li {
+  display: flex;
+  flex-direction: column;
+  /* stacks img and text vertically inside each item */
+  align-items: center;
+  /* optional: centers content */
+}
+
+.track {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.track li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
